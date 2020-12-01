@@ -9,21 +9,37 @@
 /* Begin PBXBuildFile section */
 		13AF66CC2576CA61008A9475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66CB2576CA61008A9475 /* AppDelegate.swift */; };
 		13AF66CE2576CA61008A9475 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66CD2576CA61008A9475 /* SceneDelegate.swift */; };
-		13AF66D02576CA61008A9475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66CF2576CA61008A9475 /* ViewController.swift */; };
 		13AF66D32576CA61008A9475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF66D12576CA61008A9475 /* Main.storyboard */; };
 		13AF66D52576CA63008A9475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13AF66D42576CA63008A9475 /* Assets.xcassets */; };
 		13AF66D82576CA63008A9475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF66D62576CA63008A9475 /* LaunchScreen.storyboard */; };
+		13AF66EF2576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E22576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift */; };
+		13AF66F02576CA8D008A9475 /* StoryBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E32576CA8D008A9475 /* StoryBaseViewController.swift */; };
+		13AF66F12576CA8D008A9475 /* StoriesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E52576CA8D008A9475 /* StoriesScreenViewController.swift */; };
+		13AF66F22576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E72576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift */; };
+		13AF66F32576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E82576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift */; };
+		13AF66F42576CA8D008A9475 /* StoriesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E92576CA8D008A9475 /* StoriesScreenViewModel.swift */; };
+		13AF66F52576CA8D008A9475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66EB2576CA8D008A9475 /* ViewController.swift */; };
+		13AF66F62576CA8D008A9475 /* UIColor+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66ED2576CA8D008A9475 /* UIColor+random.swift */; };
+		13AF66F72576CA8D008A9475 /* PreviewStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66EE2576CA8D008A9475 /* PreviewStoryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		13AF66C82576CA61008A9475 /* StoriesNavigationPt2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoriesNavigationPt2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13AF66CB2576CA61008A9475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		13AF66CD2576CA61008A9475 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		13AF66CF2576CA61008A9475 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13AF66D22576CA61008A9475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		13AF66D42576CA63008A9475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13AF66D72576CA63008A9475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13AF66D92576CA63008A9475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		13AF66E22576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBaseAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		13AF66E32576CA8D008A9475 /* StoryBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBaseViewController.swift; sourceTree = "<group>"; };
+		13AF66E52576CA8D008A9475 /* StoriesScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenViewController.swift; sourceTree = "<group>"; };
+		13AF66E72576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenAnimatorDismiss.swift; sourceTree = "<group>"; };
+		13AF66E82576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenAnimatorPresent.swift; sourceTree = "<group>"; };
+		13AF66E92576CA8D008A9475 /* StoriesScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenViewModel.swift; sourceTree = "<group>"; };
+		13AF66EB2576CA8D008A9475 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		13AF66ED2576CA8D008A9475 /* UIColor+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+random.swift"; sourceTree = "<group>"; };
+		13AF66EE2576CA8D008A9475 /* PreviewStoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewStoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +72,79 @@
 		13AF66CA2576CA61008A9475 /* StoriesNavigationPt2 */ = {
 			isa = PBXGroup;
 			children = (
-				13AF66CB2576CA61008A9475 /* AppDelegate.swift */,
-				13AF66CD2576CA61008A9475 /* SceneDelegate.swift */,
-				13AF66CF2576CA61008A9475 /* ViewController.swift */,
-				13AF66D12576CA61008A9475 /* Main.storyboard */,
-				13AF66D42576CA63008A9475 /* Assets.xcassets */,
-				13AF66D62576CA63008A9475 /* LaunchScreen.storyboard */,
+				13AF66F92576CAA4008A9475 /* Other */,
+				13AF66EC2576CA8D008A9475 /* Support */,
+				13AF66E02576CA8D008A9475 /* ViewControllers */,
 				13AF66D92576CA63008A9475 /* Info.plist */,
 			);
 			path = StoriesNavigationPt2;
+			sourceTree = "<group>";
+		};
+		13AF66E02576CA8D008A9475 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				13AF66E12576CA8D008A9475 /* StoryBase */,
+				13AF66E42576CA8D008A9475 /* StoriesScreenVC */,
+				13AF66EA2576CA8D008A9475 /* StartViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		13AF66E12576CA8D008A9475 /* StoryBase */ = {
+			isa = PBXGroup;
+			children = (
+				13AF66E22576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift */,
+				13AF66E32576CA8D008A9475 /* StoryBaseViewController.swift */,
+			);
+			path = StoryBase;
+			sourceTree = "<group>";
+		};
+		13AF66E42576CA8D008A9475 /* StoriesScreenVC */ = {
+			isa = PBXGroup;
+			children = (
+				13AF66E52576CA8D008A9475 /* StoriesScreenViewController.swift */,
+				13AF66E62576CA8D008A9475 /* Animators */,
+				13AF66E92576CA8D008A9475 /* StoriesScreenViewModel.swift */,
+			);
+			path = StoriesScreenVC;
+			sourceTree = "<group>";
+		};
+		13AF66E62576CA8D008A9475 /* Animators */ = {
+			isa = PBXGroup;
+			children = (
+				13AF66E72576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift */,
+				13AF66E82576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift */,
+			);
+			path = Animators;
+			sourceTree = "<group>";
+		};
+		13AF66EA2576CA8D008A9475 /* StartViewController */ = {
+			isa = PBXGroup;
+			children = (
+				13AF66EB2576CA8D008A9475 /* ViewController.swift */,
+			);
+			path = StartViewController;
+			sourceTree = "<group>";
+		};
+		13AF66EC2576CA8D008A9475 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				13AF66CB2576CA61008A9475 /* AppDelegate.swift */,
+				13AF66D42576CA63008A9475 /* Assets.xcassets */,
+				13AF66ED2576CA8D008A9475 /* UIColor+random.swift */,
+				13AF66EE2576CA8D008A9475 /* PreviewStoryView.swift */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		13AF66F92576CAA4008A9475 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				13AF66CD2576CA61008A9475 /* SceneDelegate.swift */,
+				13AF66D12576CA61008A9475 /* Main.storyboard */,
+				13AF66D62576CA63008A9475 /* LaunchScreen.storyboard */,
+			);
+			path = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +217,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13AF66D02576CA61008A9475 /* ViewController.swift in Sources */,
+				13AF66F52576CA8D008A9475 /* ViewController.swift in Sources */,
+				13AF66F62576CA8D008A9475 /* UIColor+random.swift in Sources */,
+				13AF66F22576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift in Sources */,
+				13AF66F32576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift in Sources */,
+				13AF66F02576CA8D008A9475 /* StoryBaseViewController.swift in Sources */,
+				13AF66F12576CA8D008A9475 /* StoriesScreenViewController.swift in Sources */,
+				13AF66F72576CA8D008A9475 /* PreviewStoryView.swift in Sources */,
+				13AF66F42576CA8D008A9475 /* StoriesScreenViewModel.swift in Sources */,
 				13AF66CC2576CA61008A9475 /* AppDelegate.swift in Sources */,
 				13AF66CE2576CA61008A9475 /* SceneDelegate.swift in Sources */,
+				13AF66EF2576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

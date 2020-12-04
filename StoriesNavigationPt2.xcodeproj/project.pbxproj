@@ -14,10 +14,10 @@
 		13AF66D82576CA63008A9475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13AF66D62576CA63008A9475 /* LaunchScreen.storyboard */; };
 		13AF66EF2576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E22576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift */; };
 		13AF66F02576CA8D008A9475 /* StoryBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E32576CA8D008A9475 /* StoryBaseViewController.swift */; };
-		13AF66F12576CA8D008A9475 /* StoriesScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E52576CA8D008A9475 /* StoriesScreenViewController.swift */; };
-		13AF66F22576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E72576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift */; };
-		13AF66F32576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E82576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift */; };
-		13AF66F42576CA8D008A9475 /* StoriesScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E92576CA8D008A9475 /* StoriesScreenViewModel.swift */; };
+		13AF66F12576CA8D008A9475 /* StoriesNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E52576CA8D008A9475 /* StoriesNavigationController.swift */; };
+		13AF66F22576CA8D008A9475 /* StoriesNavigationAnimatorDismiss.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E72576CA8D008A9475 /* StoriesNavigationAnimatorDismiss.swift */; };
+		13AF66F32576CA8D008A9475 /* StoriesNavigationPresentAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E82576CA8D008A9475 /* StoriesNavigationPresentAnimator.swift */; };
+		13AF66F42576CA8D008A9475 /* StoriesNavigationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66E92576CA8D008A9475 /* StoriesNavigationViewModel.swift */; };
 		13AF66F52576CA8D008A9475 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66EB2576CA8D008A9475 /* ViewController.swift */; };
 		13AF66F62576CA8D008A9475 /* UIColor+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66ED2576CA8D008A9475 /* UIColor+random.swift */; };
 		13AF66F72576CA8D008A9475 /* PreviewStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13AF66EE2576CA8D008A9475 /* PreviewStoryView.swift */; };
@@ -33,10 +33,10 @@
 		13AF66D92576CA63008A9475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13AF66E22576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBaseAnimatedTransitioning.swift; sourceTree = "<group>"; };
 		13AF66E32576CA8D008A9475 /* StoryBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBaseViewController.swift; sourceTree = "<group>"; };
-		13AF66E52576CA8D008A9475 /* StoriesScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenViewController.swift; sourceTree = "<group>"; };
-		13AF66E72576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenAnimatorDismiss.swift; sourceTree = "<group>"; };
-		13AF66E82576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenAnimatorPresent.swift; sourceTree = "<group>"; };
-		13AF66E92576CA8D008A9475 /* StoriesScreenViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesScreenViewModel.swift; sourceTree = "<group>"; };
+		13AF66E52576CA8D008A9475 /* StoriesNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesNavigationController.swift; sourceTree = "<group>"; };
+		13AF66E72576CA8D008A9475 /* StoriesNavigationAnimatorDismiss.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesNavigationAnimatorDismiss.swift; sourceTree = "<group>"; };
+		13AF66E82576CA8D008A9475 /* StoriesNavigationPresentAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesNavigationPresentAnimator.swift; sourceTree = "<group>"; };
+		13AF66E92576CA8D008A9475 /* StoriesNavigationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoriesNavigationViewModel.swift; sourceTree = "<group>"; };
 		13AF66EB2576CA8D008A9475 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		13AF66ED2576CA8D008A9475 /* UIColor+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+random.swift"; sourceTree = "<group>"; };
 		13AF66EE2576CA8D008A9475 /* PreviewStoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewStoryView.swift; sourceTree = "<group>"; };
@@ -84,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				13AF66E12576CA8D008A9475 /* StoryBase */,
-				13AF66E42576CA8D008A9475 /* StoriesScreenVC */,
+				13AF66E42576CA8D008A9475 /* StoriesNavigationController */,
 				13AF66EA2576CA8D008A9475 /* StartViewController */,
 			);
 			path = ViewControllers;
@@ -99,21 +99,21 @@
 			path = StoryBase;
 			sourceTree = "<group>";
 		};
-		13AF66E42576CA8D008A9475 /* StoriesScreenVC */ = {
+		13AF66E42576CA8D008A9475 /* StoriesNavigationController */ = {
 			isa = PBXGroup;
 			children = (
-				13AF66E52576CA8D008A9475 /* StoriesScreenViewController.swift */,
 				13AF66E62576CA8D008A9475 /* Animators */,
-				13AF66E92576CA8D008A9475 /* StoriesScreenViewModel.swift */,
+				13AF66E52576CA8D008A9475 /* StoriesNavigationController.swift */,
+				13AF66E92576CA8D008A9475 /* StoriesNavigationViewModel.swift */,
 			);
-			path = StoriesScreenVC;
+			path = StoriesNavigationController;
 			sourceTree = "<group>";
 		};
 		13AF66E62576CA8D008A9475 /* Animators */ = {
 			isa = PBXGroup;
 			children = (
-				13AF66E72576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift */,
-				13AF66E82576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift */,
+				13AF66E82576CA8D008A9475 /* StoriesNavigationPresentAnimator.swift */,
+				13AF66E72576CA8D008A9475 /* StoriesNavigationAnimatorDismiss.swift */,
 			);
 			path = Animators;
 			sourceTree = "<group>";
@@ -219,12 +219,12 @@
 			files = (
 				13AF66F52576CA8D008A9475 /* ViewController.swift in Sources */,
 				13AF66F62576CA8D008A9475 /* UIColor+random.swift in Sources */,
-				13AF66F22576CA8D008A9475 /* StoriesScreenAnimatorDismiss.swift in Sources */,
-				13AF66F32576CA8D008A9475 /* StoriesScreenAnimatorPresent.swift in Sources */,
+				13AF66F22576CA8D008A9475 /* StoriesNavigationAnimatorDismiss.swift in Sources */,
+				13AF66F32576CA8D008A9475 /* StoriesNavigationPresentAnimator.swift in Sources */,
 				13AF66F02576CA8D008A9475 /* StoryBaseViewController.swift in Sources */,
-				13AF66F12576CA8D008A9475 /* StoriesScreenViewController.swift in Sources */,
+				13AF66F12576CA8D008A9475 /* StoriesNavigationController.swift in Sources */,
 				13AF66F72576CA8D008A9475 /* PreviewStoryView.swift in Sources */,
-				13AF66F42576CA8D008A9475 /* StoriesScreenViewModel.swift in Sources */,
+				13AF66F42576CA8D008A9475 /* StoriesNavigationViewModel.swift in Sources */,
 				13AF66CC2576CA61008A9475 /* AppDelegate.swift in Sources */,
 				13AF66CE2576CA61008A9475 /* SceneDelegate.swift in Sources */,
 				13AF66EF2576CA8D008A9475 /* StoryBaseAnimatedTransitioning.swift in Sources */,

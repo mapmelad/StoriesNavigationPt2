@@ -25,16 +25,16 @@ class StoryBaseAnimatedTransitioning: NSObject {
         self.operation = operation
     }
     
+    
 }
 
 extension StoryBaseAnimatedTransitioning: UIViewControllerAnimatedTransitioning {
     
-    // http://fusionblender.net/swipe-transition-between-uiviewcontrollers/
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {
         
         /// 1 Получаем вью-контроллеры, которые будут анимировать.
         guard
-            let fromVC = transitionContext.viewController(forKey: .from),
+            let fromViewController = transitionContext.viewController(forKey: .from),
             let toVC = transitionContext.viewController(forKey: .to)
         else {
             return
@@ -45,8 +45,8 @@ extension StoryBaseAnimatedTransitioning: UIViewControllerAnimatedTransitioning 
         containerView.backgroundColor = UIColor.clear
         
         /// 3 Закругляем углы наших вью при транзишене.
-        fromVC.view.layer.masksToBounds = true
-        fromVC.view.layer.cornerRadius = Spec.cornerRadius
+        fromViewController.view.layer.masksToBounds = true
+        fromViewController.view.layer.cornerRadius = Spec.cornerRadius
         toVC.view.layer.masksToBounds = true
         toVC.view.layer.cornerRadius = Spec.cornerRadius
         
@@ -54,10 +54,10 @@ extension StoryBaseAnimatedTransitioning: UIViewControllerAnimatedTransitioning 
         // Swipe progress == width
         let width = containerView.frame.width
 
-        /// 5 Начальное положение fromVC.view (текущий видимый VC)
-        var offsetLeft = fromVC.view.frame
+        /// 5 Начальное положение fromViewController.view (текущий видимый VC)
+        var offsetLeft = fromViewController.view.frame
 
-        /// 6 Устанавливаем начальные значения для fromVC и toVC
+        /// 6 Устанавливаем начальные значения для fromViewController и toVC
         switch operation {
         case .push:
             offsetLeft.origin.x = 0
@@ -70,35 +70,35 @@ extension StoryBaseAnimatedTransitioning: UIViewControllerAnimatedTransitioning 
             toVC.view.transform = Spec.minimumScale
         }
         
-        /// 7 Перемещаем toVC.view над/под fromVC.view, в зависимости от транзишена
+        /// 7 Перемещаем toVC.view над/под fromViewController.view, в зависимости от транзишена
         switch operation {
         case .push:
-            containerView.insertSubview(toVC.view, aboveSubview: fromVC.view)
+            containerView.insertSubview(toVC.view, aboveSubview: fromViewController.view)
             
         case .pop:
-            containerView.insertSubview(toVC.view, belowSubview: fromVC.view)
+            containerView.insertSubview(toVC.view, belowSubview: fromViewController.view)
         }
         
         // Так как мы уже определили длительность анимации, то просто обращаемся к ней
         let duration = self.transitionDuration(using: transitionContext)
         
         UIView.animate(withDuration: duration, delay: 0, options: .curveEaseIn, animations: {
-        
+            
             /// 8. Выставляем финальное положение вью-контроллеров для анимации и трансформируем их.
             let moveViews = {
-                toVC.view.frame = fromVC.view.frame
-                fromVC.view.frame = offsetLeft
+                toVC.view.frame = fromViewController.view.frame
+                fromViewController.view.frame = offsetLeft
             }
 
             switch self.operation {
             case .push:
                 moveViews()
                 toVC.view.transform = .identity
-                fromVC.view.transform = Spec.minimumScale
+                fromViewController.view.transform = Spec.minimumScale
                 
             case .pop:
                 toVC.view.transform = .identity
-                fromVC.view.transform = .identity
+                fromViewController.view.transform = .identity
                 moveViews()
             }
             
@@ -106,10 +106,10 @@ extension StoryBaseAnimatedTransitioning: UIViewControllerAnimatedTransitioning 
             
             ///9.  Убираем любые возможные трансформации и скругления
             toVC.view.transform = .identity
-            fromVC.view.transform = .identity
+            fromViewController.view.transform = .identity
             
-            fromVC.view.layer.masksToBounds = true
-            fromVC.view.layer.cornerRadius = 0
+            fromViewController.view.layer.masksToBounds = true
+            fromViewController.view.layer.cornerRadius = 0
             toVC.view.layer.masksToBounds = true
             toVC.view.layer.cornerRadius = 0
      

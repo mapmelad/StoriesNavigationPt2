@@ -71,7 +71,7 @@ extension StoryBaseViewController: UIGestureRecognizerDelegate {
     private func handleHorizontalSwipe(panGesture: UIPanGestureRecognizer) {
         
         let velocity = panGesture.velocity(in: view)
-        // 4
+        // 4 отвечает за прогресс свайпа по экрану, в диапазоне от 0 до 1
         var percent: CGFloat {
             switch operation {
             case .push:
